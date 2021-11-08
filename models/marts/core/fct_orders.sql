@@ -25,7 +25,7 @@ final2 as (
 
     from orders
 
-    left join customers on (customers.customer_id = orders.order_id)
+    left join customers on (customers.customer_id = orders.customer_id)
     
     left join payments on (payments.payment_id = customers.customer_id)
 
